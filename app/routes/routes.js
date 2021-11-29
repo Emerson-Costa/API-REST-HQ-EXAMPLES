@@ -2,12 +2,13 @@ const express = require('express')
 const AutorController = require('../controllers/AutorController')
 const RevistaController = require('../controllers/RevistaController')
 const EditoraController = require('../controllers/EditoraController')
+const IndexController = require('../controllers/IndexController')
 const routes = express.Router()
 
-
-/*Rotas do Projeto*/
-
 routes
+
+//diretório raíz do projeto
+    .get('/', IndexController.index)
 
 //autor
     .get('/autor', AutorController.index)
@@ -16,13 +17,13 @@ routes
     .delete('/autor/:nome_autor', AutorController.delete)
 
 //revista
-.get('/revista', RevistaController.index)
+    .get('/revista', RevistaController.index)
     .post('/revista', RevistaController.create)
     .put('/revista/:nome_revista', RevistaController.update)
     .delete('/revista/:nome_revista', RevistaController.delete)
 
 //editora
-.get('/editora', EditoraController.index)
+    .get('/editora', EditoraController.index)
     .post('/editora', EditoraController.create)
     .put('/editora/:nome_editora', EditoraController.update)
     .delete('/editora/:nome_editora', EditoraController.delete)

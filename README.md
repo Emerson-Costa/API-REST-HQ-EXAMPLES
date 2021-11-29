@@ -1,4 +1,4 @@
-# 														Projeto HqShow
+# 												Projeto HqRestAPIshow
 
 
 
@@ -99,64 +99,90 @@ O padrão de desenvolvimento adotado para a organização este projeto é o MVC 
 
 ## Como Executar este Projeto
 
-Execute os seguites comandos: 'npm install'  ,  'npm run serve'
+Execute os seguites comandos:
 
-* 1° $ npm install    (para instalar os módulos do node)
-* 2° $ npm run start (para executar esta API localmente)
+* 1° $ npm install    *(para instalar os módulos do node)*
 
-### links para requisição HTTP  <i>(Utilizando o Localhost)</i>
+* 2° $ npm run start *(para executar esta API localmente)*
 
-* autor
+  
+
+## links para requisição HTTP  
+
+<i>Link do Servidor  :</i> Pode ser requisitado sem o uso deste projeto com a API funcionando direto no Heroku
+
+<i>Link do Localhost:</i> Só pode ser requisitado com a execução deste projeto
+
+
+
+* <b>autor</b>
 
   * .get
 
-    * link
+    * *link do Servidor   : https://hqrestapishow.herokuapp.com/autor*
+    * *Link do Localhost: http://localhost:5000/*
 
   * .post
 
-    * link
+    * *link do Servidor   :  https://hqrestapishow.herokuapp.com/autor*
+    * *Link do Localhost: http://localhost:5000/*
 
   * .put
 
-    * link
+    * *link do Servidor   :  https://hqrestapishow.herokuapp.com/autor/<nome-autor>*
+    * *Link do Localhost: http://localhost:5000/*
 
   * .delete
 
-    * link
-
+    * *link do Servidor   :  https://hqrestapishow.herokuapp.com/autor/<nome-autor>*
+    * *Link do Localhost: http://localhost:5000/*
+    
     
 
-* revista
+* <b>revista</b>
 
   * .get
-    * link
+    * *link do Servidor   : https://hqrestapishow.herokuapp.com/revista*
+    * *Link do Localhost: http://localhost:5000/revista*
+    
   * .post
-    * link
+    * *link do Servidor   : https://hqrestapishow.herokuapp.com/revista*
+    * *Link do Localhost: http://localhost:5000/revista*
+    
   * .put
-    * link
+    * *link do Servidor   :  https://hqrestapishow.herokuapp.com/revista/<nome-revista>*
+    * *Link do Localhost: http://localhost:5000/revista/<nome-revista>*
+    
   * .delete
-    * link
+    * *link do Servidor   : https://hqrestapishow.herokuapp.com/revista/<nome-revista>*
+    * *Link do Localhost: http://localhost:5000/revista/<nome-revista>*
+    
+    
 
-* editora
+* <b>editora</b>
 
   * .get
-    * link
+    * *link do Servidor   : https://hqrestapishow.herokuapp.com/editora*
+    * *Link do Localhost: http://localhost:5000/editora*
   * .post
-    * link
+    * *link do Servidor   :  https://hqrestapishow.herokuapp.com/editora*
+    * *Link do Localhost: http://localhost:5000/editora*
   * .put
-    * link
+    * *link do Servidor   : https://hqrestapishow.herokuapp.com/editora/<nome-editora>*
+    * *Link do Localhost: http://localhost:5000/editora/<nome-editora>*
   * .delete
-    * link
+    * *link do Servidor   : https://hqrestapishow.herokuapp.com/editora/<nome-editora>* 
+    * *Link do Localhost: http://localhost:5000/editora/<nome-editora>*
 
 
 
 ## Link do Repositório no Heroku
 
-Vale a pena resaltar que o link para fazer o CRUD é modificado pelo fato do projeto esta hospedado em um outro servidor, portanto ao invés de usar o 'localhost:3000' utilize o ' '.
+Vale ressaltar que o link para fazer o CRUD é modificado pelo fato do projeto esta hospedado em um outro servidor, portanto ao invés de usar o '[localhost:3000](editora/<nome-editora>)' utilize o 'https://hqrestapishow.herokuapp.com/ '.
 
-por exemplo, para o get na  Entidade do autor basta informa na URL :  ' ' e assim sucessivamente para todas as demais URLs para a requisição deste projeto. 
+por exemplo, para o get na  Entidade do autor basta informa na URL :  ' https://hqrestapishow.herokuapp.com/autor' e assim sucessivamente para todas as demais URLs para a requisição deste projeto. 
 
-Link para o repositório deste projeto: ' '
+Link para o repositório deste projeto: ' https://hqrestapishow.herokuapp.com/ '
 
 
 
