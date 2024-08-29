@@ -1,85 +1,48 @@
-# 												Projeto HqRestAPIshow
+# HqRestAPIshow Project
 
+## A Idéia
 
+#### Desenvolver uma API voltada para o registro de revistas ou HQ (História em Quadrinhos), este projeto contém três tipos de entidades:
+<ul>
+ <li>Autor: responsável pela produção da HQ.</li>
+ <li>Revista: criada por um determinado autor.</li>
+ <li>Editora: responsável pela publicação.</li>
+</ul>
 
-## A Ideia
-
-A ideia foi desenvolver uma API básica de um sistema voltado para cadastro de HQ (História em Quadrinhos), onde contém três tipos de </br> 
-entidades, O autor o responsável pela produção da HQ, a revista ou seja a HQ que o autor criou e a Editora onde a mesma é a responsável</br>
-pelo cadastro das HQs de vários autores, segue abaixo o modelo criado para o desenvolvimento desta API.
-
+Modelo criado
 ![modeloBD](modeloBD.PNG)
 
+#### Dependências deste projeto
+<ul>
+ <li> express: Framework para desenvolvimento desta API. </li>
+ <li> Knex: Conexão com o banco e migrações. </li>
+ <li> Sqlite3: Banco de dados incluso neste projeto. </li>
+ <li> Nodemon: Mantém o servidor executando durante o desenvolvimento de novas funcionalidades. </li>
+</ul>
 
-
-## Dependências Do projeto
-
-#### Tecnologias aplicadas neste projeto:
-
-* <b>express</b>
-
-  * Um Framework para desenvolvimento desta API.
-
-* <b>Knex</b>
-
-  * Conexão com o banco e migrações.
-
-* <b>sqlite3</b>
-
-  * Banco de dados incluso neste projeto. 
-    
-* <b><i>Nodemon</i></b>
-
-  * Dependência voltada para manter o servidor do ar sem precisar ficar reiniciando a cada feature desenvolvida no projeto.
-
-## Como Executar este Projeto
+## Como Executar?
 
 Execute os seguites comandos:
+````
+$ npm install
+$ npm run start
+````
 
-* 1° $ npm install    *(para instalar os módulos do node)*
+## URL´s para teste das requisições
 
-* 2° $ npm run start *(para executar esta API localmente)*
+#### <b>Autor</b>
+<ul>
+ <li><b>GET:</b> <i>http://localhost:5000/autor</i> </li>
+ <li><b>POST:</b> <i>http://localhost:5000/autor</i> </li>
+ <li><b>PUT:</b> <i>http://localhost:5000/autor/<nome-autor></i> </li>
+ <li><b>DELETE:</b> <i>http://localhost:5000/autor/<nome-autor></i> </li>
+</ul>
 
-  
-
-## URL´s para testar as requisições HTTP  
-
-* <b>autor</b>
-
-  * .get
-    * *URL do Localhost: http://localhost:5000/autor*
-
-  * .post
-    * *URL do Localhost: http://localhost:5000/autor*
-
-  * .put
-    * *URL do Localhost: http://localhost:5000/autor/<nome-autor>*
-
-  * .delete
-    * *URL do Localhost: http://localhost:5000/autor/<nome-autor>*
+#### <b>Revista</b>
+<ul>
+ <li><b>GET:</b> <i>http://localhost:5000/revista</i> </li>
+ <li><b>POST:</b> <i>http://localhost:5000/revista</i> </li>
+ <li><b>PUT:</b> <i>http://localhost:5000/revista/<nome-revista></i> </li>
+ <li><b>DELETE:</b> <i>http://localhost:5000/revista/<nome-revista></i> </li>
+</ul>
     
-* <b>revista</b>
-    * *Link do Localhost: http://localhost:5000/revista*
-    
-  * .post
-    * *Link do Localhost: http://localhost:5000/revista*
-    
-  * .put
-    * *Link do Localhost: http://localhost:5000/revista/<nome-revista>*
-      
-  * .delete
-    * *Link do Localhost: http://localhost:5000/revista/<nome-revista>*
-    
-* <b>editora</b>
-
-  * .get
-    * *Link do Localhost: http://localhost:5000/editora*
-      
-  * .post
-    * *Link do Localhost: http://localhost:5000/editora*
-      
-  * .put
-    * *Link do Localhost: http://localhost:5000/editora/<nome-editora>*
-      
-  * .delete
-    * *Link do Localhost: http://localhost:5000/editora/<nome-editora>*
